@@ -1,7 +1,7 @@
-﻿{
+{
   "iisSettings": {
-    "windowsAuthentication": false, 
-    "anonymousAuthentication": true, 
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:51086",
       "sslPort": 44331
@@ -12,16 +12,19 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "AzureAD:Domain": "riwa4.de",
+        "AzureAd:TenantId": "62f58951-d420-4e59-8d89-ad924510e70c",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "AzureAd:ClientId": "8c840e1e-809c-4acf-85cc-4b76aeeeee0c"
       }
     },
     "AminWebSite": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
     }
   }
 }
