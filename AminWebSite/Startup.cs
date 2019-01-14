@@ -38,6 +38,7 @@ namespace AminWebSite
             services.AddAuthentication(AzureADDefaults.AuthenticationScheme)
                 .AddAzureAD(options => Configuration.Bind("AzureAd", options));
 
+
             services.AddMvc(options =>
             {
                 var policy = new AuthorizationPolicyBuilder()
